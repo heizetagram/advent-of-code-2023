@@ -30,9 +30,10 @@ public class Trebuchet {
                         }
                     }
                 }
-                // Reset
+                // Reset StringBuilder
                 numbersConcat.setLength(0);
 
+                // Find first and last element in ArrayList numbersOnLine
                 // Concatenate first and last number
                 numbersConcat.append(numbersOnLine.getFirst());
                 numbersConcat.append(numbersOnLine.getLast());
@@ -40,7 +41,7 @@ public class Trebuchet {
                 // Get sum
                 sum += Integer.parseInt(numbersConcat.toString());
 
-                // Reset
+                // Reset ArrayList
                 numbersOnLine.clear();
             }
             System.out.println(sum);
